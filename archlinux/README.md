@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `archlinux` official image](https://hub.docker.com/_/archlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,8 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20201102.0.8296`](https://github.com/archlinux/archlinux-docker/blob/72f354a55672eabb43d5f928dbcb38e86b4fd0b3/Dockerfile.base)
--	[`base-devel`, `base-devel-20201102.0.8296`](https://github.com/archlinux/archlinux-docker/blob/72f354a55672eabb43d5f928dbcb38e86b4fd0b3/Dockerfile.base-devel)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/archlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/archlinux.svg?label=i386/archlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/archlinux/)
 
 # Quick reference (cont.)
 
@@ -58,7 +61,7 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The base filesystem tarball for this image is auto-generated in Arch Linux infrastructure at the beginning of each month. Given the rolling-release nature of Arch Linux, images are tagged with the timestamp of the date they were generated. For example, `archlinux:20191006` was generated the Sixth of October of 2019. The latest tag will contain the latest build always.
+The base filesystem tarball for this image is auto-generated in Arch Linux infrastructure at the beginning of each month. Given the rolling-release nature of Arch Linux, images are tagged with the timestamp of the date they were generated. For example, `i386/archlinux:20191006` was generated the Sixth of October of 2019. The latest tag will contain the latest build always.
 
 This image is intended to serve the following goals:
 
